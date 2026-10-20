@@ -1,0 +1,1238 @@
+{
+  "$comment": "Derived, not authored. Each entry records the digest of the archive file it came from, so a page can be proven to show that painting. `palette` is sampled from pixels and is decorative only - the site never calls it a pigment the artist named.",
+  "count": 29,
+  "generator": {
+    "cardWidth": 900,
+    "fullWidth": 1600,
+    "jpegQuality": {
+      "card": 80,
+      "full": 84,
+      "thumb": 74
+    },
+    "note": "No wall-clock or random value is written, so two runs on the same archive produce the same manifest bytes.",
+    "pillow": "12.3.0",
+    "thumbWidth": 560,
+    "tool": "tools/prepare-images.py"
+  },
+  "images": {
+    "casa-gorordo": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 207414,
+        "file": "site/assets/work/casa-gorordo-card.jpg",
+        "h": 672,
+        "quality": 80,
+        "sha256": "05ed32d22b9a3c72c072346e5381d581468837ce31bdf3c2d3971bfc5495074d",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 691061,
+        "file": "site/assets/work/casa-gorordo-full.jpg",
+        "h": 1194,
+        "quality": 84,
+        "sha256": "f1747cf72fe81d5c7b04b3ab983e2b6818fa6b12c191788ab78c2bcd6c4c4fe3",
+        "w": 1600
+      },
+      "palette": [
+        "#4b443c",
+        "#7a705b",
+        "#cfcec2",
+        "#b8b6ae"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/casa_gorordo.jpg",
+        "h": 1542,
+        "sha256": "f80a38c74f369f2ed4a4627e6623c0bcb656b34d6037301860c6a00f1176a42e",
+        "w": 2066
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 70165,
+        "file": "site/assets/work/casa-gorordo-thumb.jpg",
+        "h": 418,
+        "quality": 74,
+        "sha256": "eccb5821afc69a0971642d64ef138a56f2f2f59204d48f68aeec89128bde1f8c",
+        "w": 560
+      }
+    },
+    "colon-study": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 299850,
+        "file": "site/assets/work/colon-study-card.jpg",
+        "h": 1280,
+        "quality": 74,
+        "sha256": "35090090cbd1caa805843889422d657e873e56c2dc5ca4ddfb3660fbdf813ca1",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 629780,
+        "file": "site/assets/work/colon-study-full.jpg",
+        "h": 2048,
+        "quality": 84,
+        "sha256": "d88c82f5c3a363740f7e3ee95361937793c2894cc6f165e0afba86e171e98f86",
+        "w": 1440
+      },
+      "palette": [
+        "#4f435a",
+        "#a5826e",
+        "#baa492",
+        "#80747d"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/colon-study.jpg",
+        "h": 2048,
+        "sha256": "f5c6d503a35e9f3bf92b15cdf8ed9275f43525de44ce97e24c3d45fb5faa6e3b",
+        "w": 1440
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 101633,
+        "file": "site/assets/work/colon-study-thumb.jpg",
+        "h": 796,
+        "quality": 62,
+        "sha256": "a76d346c258ae190768a0aadda935e5905d8cc3aac62b24b9d67444baf7d54c8",
+        "w": 560
+      }
+    },
+    "daong": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 68890,
+        "file": "site/assets/work/daong-card.jpg",
+        "h": 708,
+        "quality": 80,
+        "sha256": "3c9cae397c335906550cf089459e06a450e4966fc141b8c11178674cd2dbb171",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 83096,
+        "file": "site/assets/work/daong-full.jpg",
+        "h": 732,
+        "quality": 84,
+        "sha256": "f7c16c563378a6419cf305f809787ebd87b3a2daf2021aca2ede040900e3aa0a",
+        "w": 931
+      },
+      "palette": [
+        "#18232e",
+        "#e7e2dc",
+        "#807a6c",
+        "#2a3038"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/daong.jpg",
+        "h": 732,
+        "sha256": "c5e0b33ee251ee045d1f038fd052e7dfa42a32b950df57cb1520959be77be37d",
+        "w": 931
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 29475,
+        "file": "site/assets/work/daong-thumb.jpg",
+        "h": 440,
+        "quality": 74,
+        "sha256": "cae55882c2345eb122ea5cb0b96e139b709357b8a8f2edc0596a3e567d9dd6cf",
+        "w": 560
+      }
+    },
+    "ed": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 152407,
+        "file": "site/assets/work/ed-card.jpg",
+        "h": 900,
+        "quality": 80,
+        "sha256": "19c9581a486e5604763035195e6124c0bf790b2b9feeac37c38507a87372af17",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 441911,
+        "file": "site/assets/work/ed-full.jpg",
+        "h": 1600,
+        "quality": 84,
+        "sha256": "aa4e475a5e9f7540b6d161b306150f978ded24da4d57b97f3511b49b6c27baaf",
+        "w": 1600
+      },
+      "palette": [
+        "#5b4b43",
+        "#937a5e",
+        "#dad2bf",
+        "#c2b49a"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/ed.jpg",
+        "h": 2268,
+        "sha256": "e2f2f1028636f423921ad08ea891c0ce98cddd5d4d49bd84ce561c376ea5bfd7",
+        "w": 2268
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 57085,
+        "file": "site/assets/work/ed-thumb.jpg",
+        "h": 560,
+        "quality": 74,
+        "sha256": "82b0f270e1c1b39976b9e1b0716d123ad3c5347d8d4ec87b8c9c80814a50e02f",
+        "w": 560
+      }
+    },
+    "few": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 152177,
+        "file": "site/assets/work/few-card.jpg",
+        "h": 1024,
+        "quality": 80,
+        "sha256": "dc7ebce16c93f50a81b78d5bc46d35cb4bbeda6c3e4671223d98f30d9ec8fc4a",
+        "w": 693
+      },
+      "full": {
+        "boundedBy": 300000,
+        "bytes": 152177,
+        "file": "site/assets/work/few-card.jpg",
+        "h": 1024,
+        "quality": 80,
+        "sha256": "dc7ebce16c93f50a81b78d5bc46d35cb4bbeda6c3e4671223d98f30d9ec8fc4a",
+        "w": 693
+      },
+      "palette": [
+        "#583c40",
+        "#ad8b76",
+        "#c6b3a2",
+        "#d8bda4"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/few.jfif",
+        "h": 1024,
+        "sha256": "3d903ebe6f91035323ab4186ceb13540dc4ce679b9a053a4568775139091553f",
+        "w": 693
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 90553,
+        "file": "site/assets/work/few-thumb.jpg",
+        "h": 827,
+        "quality": 74,
+        "sha256": "15b8ad14fd9cf42ff01128df7f6c79c0074f5e8bbf30dd02439dc1da1b0c7988",
+        "w": 560
+      }
+    },
+    "mother-and-child": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 88465,
+        "file": "site/assets/work/mother-and-child-card.jpg",
+        "h": 809,
+        "quality": 80,
+        "sha256": "d823258befd8c40bae41e5400d67cc171d2e08bc0575cc4f66e3ccb2769202a6",
+        "w": 660
+      },
+      "full": {
+        "boundedBy": 300000,
+        "bytes": 88465,
+        "file": "site/assets/work/mother-and-child-card.jpg",
+        "h": 809,
+        "quality": 80,
+        "sha256": "d823258befd8c40bae41e5400d67cc171d2e08bc0575cc4f66e3ccb2769202a6",
+        "w": 660
+      },
+      "palette": [
+        "#cd886b",
+        "#704143",
+        "#1f2227",
+        "#a05b51"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/mother-and-child.jpg",
+        "h": 809,
+        "sha256": "0ccf95f115368badb311056bf77280781881e889430bb1bc8257fadab1a2d292",
+        "w": 660
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 56925,
+        "file": "site/assets/work/mother-and-child-thumb.jpg",
+        "h": 686,
+        "quality": 74,
+        "sha256": "8ba8671455a77fd4b87b82b9cf310c4355b3be1febbb60c48fb0578b98b9a958",
+        "w": 560
+      }
+    },
+    "old-work-2022": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 167692,
+        "file": "site/assets/work/old-work-2022-card.jpg",
+        "h": 1125,
+        "quality": 80,
+        "sha256": "111d370dad5d0177e71a6a1caecfc964c7ab2170b4b17354760d8f690db88711",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 374517,
+        "file": "site/assets/work/old-work-2022-full.jpg",
+        "h": 1615,
+        "quality": 84,
+        "sha256": "052696d2a2eadab37750024cf38ace1a7e9db673a080f0f2ea5bd7609ec15561",
+        "w": 1292
+      },
+      "palette": [
+        "#4f525c",
+        "#e1dcd7",
+        "#76787f",
+        "#908c8c"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/old-work-2022.jpg",
+        "h": 1615,
+        "sha256": "0929f6da53d5d23c9bd9081e38c9c6c6def454c70f4b257198671129a83b25c9",
+        "w": 1292
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 63850,
+        "file": "site/assets/work/old-work-2022-thumb.jpg",
+        "h": 700,
+        "quality": 74,
+        "sha256": "a4dfccf5049e1ca29e8b607ed8efdc7c0f4eca68a2e370f06466924f30eb4a2f",
+        "w": 560
+      }
+    },
+    "pantalan": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 62645,
+        "file": "site/assets/work/pantalan-card.jpg",
+        "h": 737,
+        "quality": 80,
+        "sha256": "48e2234e0c00f92bab5ade7805a2757646c9548120227de9eedb592bae652bdd",
+        "w": 625
+      },
+      "full": {
+        "boundedBy": 300000,
+        "bytes": 62645,
+        "file": "site/assets/work/pantalan-card.jpg",
+        "h": 737,
+        "quality": 80,
+        "sha256": "48e2234e0c00f92bab5ade7805a2757646c9548120227de9eedb592bae652bdd",
+        "w": 625
+      },
+      "palette": [
+        "#18212c",
+        "#efe8d9",
+        "#9092ab",
+        "#f2ede1"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/pantalan.jpg",
+        "h": 737,
+        "sha256": "ee80b420536d179d09b9296fdcf3e8ec776c16885bfa78e2392ec5a816faa9de",
+        "w": 625
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 43490,
+        "file": "site/assets/work/pantalan-thumb.jpg",
+        "h": 660,
+        "quality": 74,
+        "sha256": "6d2ca118c317ac17617251ee0439c85a227227f8f2cbb945eb1171495ab70301",
+        "w": 560
+      }
+    },
+    "scan-674525991": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 133547,
+        "file": "site/assets/work/scan-674525991-card.jpg",
+        "h": 609,
+        "quality": 80,
+        "sha256": "74d08c4d8eaa421b369101992568fa4eedb87569b3075312d9d24a1e63c67586",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 360599,
+        "file": "site/assets/work/scan-674525991-full.jpg",
+        "h": 987,
+        "quality": 84,
+        "sha256": "82192a12e9f4b4c857f0b2eb9c77fa7dd2ef65be45c68cfbc5820b1e53c5513b",
+        "w": 1458
+      },
+      "palette": [
+        "#837860",
+        "#aaa175",
+        "#45444d",
+        "#6a5f5d"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/stillife.jpg",
+        "h": 987,
+        "sha256": "8cba0df13e1c623a676b5e9badfb45a03cdfb490d95463b286a258ceddf6c346",
+        "w": 1458
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 50072,
+        "file": "site/assets/work/scan-674525991-thumb.jpg",
+        "h": 379,
+        "quality": 74,
+        "sha256": "a279ed971125cdc2f5ef88265e4708adf6b1e1f650cc947b55d440e2541e8cd0",
+        "w": 560
+      }
+    },
+    "scan-677838823": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 110481,
+        "file": "site/assets/work/scan-677838823-card.jpg",
+        "h": 621,
+        "quality": 80,
+        "sha256": "a76bf4d3dc9168b2e33ec09975dd78d1c83d48d96598e99dfab816dcecb8c88f",
+        "w": 828
+      },
+      "full": {
+        "boundedBy": 300000,
+        "bytes": 110481,
+        "file": "site/assets/work/scan-677838823-card.jpg",
+        "h": 621,
+        "quality": 80,
+        "sha256": "a76bf4d3dc9168b2e33ec09975dd78d1c83d48d96598e99dfab816dcecb8c88f",
+        "w": 828
+      },
+      "palette": [
+        "#a48c6c",
+        "#6d5b51",
+        "#b2ac9a",
+        "#c2c7b5"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/sketch7.jpg",
+        "h": 621,
+        "sha256": "bfd65750154c9f9983868652aef69e6e6f053119d9aa0a9c82e0e0d3ee4cbbf4",
+        "w": 828
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 53202,
+        "file": "site/assets/work/scan-677838823-thumb.jpg",
+        "h": 420,
+        "quality": 74,
+        "sha256": "dc9bccf0c1f139b4fb074e0a136e63f101da131349087fc53b7292bdad2523c3",
+        "w": 560
+      }
+    },
+    "scan-680595347": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 263109,
+        "file": "site/assets/work/scan-680595347-card.jpg",
+        "h": 1200,
+        "quality": 80,
+        "sha256": "2274b67d357c3d68be264e2b4926389cbe55d61f4343a33d3ab2c0420ccb5b0f",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 679717,
+        "file": "site/assets/work/scan-680595347-full.jpg",
+        "h": 2048,
+        "quality": 84,
+        "sha256": "bdbd11c026e2b7f9d0b20f4828a4b008e6144ebf0c02d0d43a52fdf5c1ddfd65",
+        "w": 1536
+      },
+      "palette": [
+        "#4d3d38",
+        "#957772",
+        "#ccaea5",
+        "#d2d0c9"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/sketch4.jpg",
+        "h": 2048,
+        "sha256": "2f97dcccf66322de09fff3bc8530503dc9c8165fa6b5e950f7ec16d92c831c80",
+        "w": 1536
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 93497,
+        "file": "site/assets/work/scan-680595347-thumb.jpg",
+        "h": 747,
+        "quality": 74,
+        "sha256": "dedb8dc07c0b960db2b97501756051bfe283fad8ccf9e69ec42196b16d6571a2",
+        "w": 560
+      }
+    },
+    "scan-747168624": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 203331,
+        "file": "site/assets/work/scan-747168624-card.jpg",
+        "h": 1200,
+        "quality": 80,
+        "sha256": "9232588a4df7668883d05ceb2ba12a33e708b87d7d576a047ddf89e310208ed6",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 361894,
+        "file": "site/assets/work/scan-747168624-full.jpg",
+        "h": 2048,
+        "quality": 84,
+        "sha256": "e8cab83e1b63be339903921ab60e399d436317653a71dcfd1f00fcd3a0c6c552",
+        "w": 1536
+      },
+      "palette": [
+        "#514a3d",
+        "#b9b293",
+        "#9c9176",
+        "#cac7b7"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/747168624_10164420516511628_4416947043616924919_n.jpg",
+        "h": 2048,
+        "sha256": "d9807c48ceca9fb9f89067fcc54d22a148229ebee279eee97ed9c0f2f16041a6",
+        "w": 1536
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 84061,
+        "file": "site/assets/work/scan-747168624-thumb.jpg",
+        "h": 747,
+        "quality": 74,
+        "sha256": "87259b14edbe893c24004e9896a02f36b214a1685173efa7503c0025d3729e02",
+        "w": 560
+      }
+    },
+    "scan-749143333": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 186747,
+        "file": "site/assets/work/scan-749143333-card.jpg",
+        "h": 1146,
+        "quality": 80,
+        "sha256": "d80c39b3fb4796d13360a13419a0317b75845edba0df31cdc72f367f60bddff6",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 522496,
+        "file": "site/assets/work/scan-749143333-full.jpg",
+        "h": 2038,
+        "quality": 84,
+        "sha256": "1d809fa48c6d0e82936d1567b6cac93da7b5f1c186e35dd028f9da56c5a8b9fb",
+        "w": 1600
+      },
+      "palette": [
+        "#b29f85",
+        "#958169",
+        "#707074",
+        "#454343"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/749143333_10164465079846628_6329385318187594912_n.jpg",
+        "h": 2048,
+        "sha256": "9d76ad8bf848b1998b73a9572ccec59e22005bac0e216928907e0f5a3e2f875f",
+        "w": 1608
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 69614,
+        "file": "site/assets/work/scan-749143333-thumb.jpg",
+        "h": 713,
+        "quality": 74,
+        "sha256": "2b7995ce42bb07209a0011a82f59f322158440fe1f8eb1bee81a06e7d1310ea7",
+        "w": 560
+      }
+    },
+    "scan-749355868": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 57561,
+        "file": "site/assets/work/scan-749355868-card.jpg",
+        "h": 590,
+        "quality": 80,
+        "sha256": "01f64aa96af1da2a9e1e3c31b840d4a0eb7256d55e4a6215b958067db61d9283",
+        "w": 404
+      },
+      "full": {
+        "boundedBy": 300000,
+        "bytes": 57561,
+        "file": "site/assets/work/scan-749355868-card.jpg",
+        "h": 590,
+        "quality": 80,
+        "sha256": "01f64aa96af1da2a9e1e3c31b840d4a0eb7256d55e4a6215b958067db61d9283",
+        "w": 404
+      },
+      "palette": [
+        "#7e6b5d",
+        "#cdc5ac",
+        "#c6af7c",
+        "#d5d0bf"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/749355868_10164452464066628_677510940498718213_n.jpg",
+        "h": 590,
+        "sha256": "2e869d96839af28429a129d0c3dfcd86d97fdfc99c90ac494ad69f2264508a6f",
+        "w": 404
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 51350,
+        "file": "site/assets/work/scan-749355868-thumb.jpg",
+        "h": 590,
+        "quality": 74,
+        "sha256": "76e59465e2e4017567892a4e473e8b96ac4f255b10f20657f241cef9d42d485c",
+        "w": 404
+      }
+    },
+    "scan-754498091": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 132564,
+        "file": "site/assets/work/scan-754498091-card.jpg",
+        "h": 612,
+        "quality": 80,
+        "sha256": "b5d099febcc6820d24331167a733c6c99bd25ac7891b58514a523721d46feb95",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 383854,
+        "file": "site/assets/work/scan-754498091-full.jpg",
+        "h": 1088,
+        "quality": 84,
+        "sha256": "f086ef0ef678501f8170e43b90af1930204ee064065d265bb12abfce32c41560",
+        "w": 1600
+      },
+      "palette": [
+        "#48352c",
+        "#8f7564",
+        "#a89d96",
+        "#6e6260"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/754498091_10164473669591628_7977650353364825608_n.jpg",
+        "h": 1392,
+        "sha256": "d1b1ea4b35cf286a9f6c5756af78e8ec4d653c32916ab7d4cf4e8641a1b7967a",
+        "w": 2048
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 47940,
+        "file": "site/assets/work/scan-754498091-thumb.jpg",
+        "h": 381,
+        "quality": 74,
+        "sha256": "73075635acc627de0acf1ea6329a01f1749cf02a481e0d06bb4277cbfa257d3c",
+        "w": 560
+      }
+    },
+    "scan-756345117": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 169924,
+        "file": "site/assets/work/scan-756345117-card.jpg",
+        "h": 898,
+        "quality": 80,
+        "sha256": "4ed06aac4c8bfb67acd3063da258124662c902c8dd634d82db1b9264dd832e4d",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 214887,
+        "file": "site/assets/work/scan-756345117-full.jpg",
+        "h": 1078,
+        "quality": 84,
+        "sha256": "193b2d2d2f237fb677b36315c069532a7d5273eb4e1547e74bd161279d17a25d",
+        "w": 1080
+      },
+      "palette": [
+        "#997861",
+        "#664b3c",
+        "#b79474",
+        "#cfb597"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/study7.jpg",
+        "h": 1078,
+        "sha256": "0b5d6d5a5a3cbb610d00e3eb75682b8f6f4b4fcd9ae31220a50b9459c428e636",
+        "w": 1080
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 69413,
+        "file": "site/assets/work/scan-756345117-thumb.jpg",
+        "h": 559,
+        "quality": 74,
+        "sha256": "c08b6924f865c617bceab02c2fc280e17a220b03aa24e5299419cd4a8eafe42f",
+        "w": 560
+      }
+    },
+    "scan-768310009": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 70966,
+        "file": "site/assets/work/scan-768310009-card.jpg",
+        "h": 590,
+        "quality": 80,
+        "sha256": "d372525eb962adefb7cabfeeae68f336343b63b11d023498c3a4ef6bfbd2567a",
+        "w": 443
+      },
+      "full": {
+        "boundedBy": 300000,
+        "bytes": 70966,
+        "file": "site/assets/work/scan-768310009-card.jpg",
+        "h": 590,
+        "quality": 80,
+        "sha256": "d372525eb962adefb7cabfeeae68f336343b63b11d023498c3a4ef6bfbd2567a",
+        "w": 443
+      },
+      "palette": [
+        "#a77f5e",
+        "#58444c",
+        "#b7a692",
+        "#cac1ad"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/768310009_18608370586002772_1940221323710323767_n.jpg",
+        "h": 590,
+        "sha256": "10228b5f37167a4614d0d067e4e29223a7d9a4e94a4a31e5ead8b69da29d4000",
+        "w": 443
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 63760,
+        "file": "site/assets/work/scan-768310009-thumb.jpg",
+        "h": 590,
+        "quality": 74,
+        "sha256": "837263263029d13920ee2d5a2950a2f7c35fdccd1ac9a51b111ee3099ab365f1",
+        "w": 443
+      }
+    },
+    "scan-775416747": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 44220,
+        "file": "site/assets/work/scan-775416747-card.jpg",
+        "h": 329,
+        "quality": 80,
+        "sha256": "6aa142704001385d1ba8ac28be7131e334d63155699959910490d527b7273da6",
+        "w": 580
+      },
+      "full": {
+        "boundedBy": 300000,
+        "bytes": 44220,
+        "file": "site/assets/work/scan-775416747-card.jpg",
+        "h": 329,
+        "quality": 80,
+        "sha256": "6aa142704001385d1ba8ac28be7131e334d63155699959910490d527b7273da6",
+        "w": 580
+      },
+      "palette": [
+        "#ada18f",
+        "#3c4149",
+        "#637483",
+        "#928576"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/775416747_10164573118651628_7354918957627733590_n.jfif",
+        "h": 329,
+        "sha256": "8a346d301ae53ce7aa0f3a64be5e408fa173a29dfec27246f94eb028a0d59797",
+        "w": 580
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 36222,
+        "file": "site/assets/work/scan-775416747-thumb.jpg",
+        "h": 318,
+        "quality": 74,
+        "sha256": "58f2678103b1f00af74c3d42f5a726d3353ed6af47c8f65f190834e582620d68",
+        "w": 560
+      }
+    },
+    "scan-807859072": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 282225,
+        "file": "site/assets/work/scan-807859072-card.jpg",
+        "h": 1200,
+        "quality": 80,
+        "sha256": "b8b14ce5ed09a0356225ba27b3fe7fe273628e792acc41ce06e58dff926bb389",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 571507,
+        "file": "site/assets/work/scan-807859072-full.jpg",
+        "h": 2048,
+        "quality": 84,
+        "sha256": "85a51330945147f9000fede0e6333ec8813076be740164b724cc318870cb2da5",
+        "w": 1536
+      },
+      "palette": [
+        "#453229",
+        "#8e6a57",
+        "#c29782",
+        "#9d8e78"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/studysketch6.jpg",
+        "h": 2048,
+        "sha256": "846a1892dfcac308fb0ae7422efe4d9a71b6a3da17fccb2a2642a9ffd18f0d85",
+        "w": 1536
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 104440,
+        "file": "site/assets/work/scan-807859072-thumb.jpg",
+        "h": 747,
+        "quality": 74,
+        "sha256": "917f1f8f3e4934b0fc929db7de878ba0907801f68311ddd74afc28140e889eb5",
+        "w": 560
+      }
+    },
+    "scan-964ca031": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 105242,
+        "file": "site/assets/work/scan-964ca031-card.jpg",
+        "h": 1024,
+        "quality": 80,
+        "sha256": "f049c86b7584e52fa0a970c53d9d8d8ef9e1bbd3a33e885934bdd97c7ddaf2fb",
+        "w": 769
+      },
+      "full": {
+        "boundedBy": 300000,
+        "bytes": 105242,
+        "file": "site/assets/work/scan-964ca031-card.jpg",
+        "h": 1024,
+        "quality": 80,
+        "sha256": "f049c86b7584e52fa0a970c53d9d8d8ef9e1bbd3a33e885934bdd97c7ddaf2fb",
+        "w": 769
+      },
+      "palette": [
+        "#70685f",
+        "#a59a8e",
+        "#4a3f39",
+        "#857769"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/colon.jpg",
+        "h": 1024,
+        "sha256": "4c60c9152bb73d0d453fb71cd51ffc4b1fbe8ecff84eb2d167f485c38ef8ad2a",
+        "w": 769
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 59435,
+        "file": "site/assets/work/scan-964ca031-thumb.jpg",
+        "h": 746,
+        "quality": 74,
+        "sha256": "85e130699d0151d76c5a39f4946968dbfdf186375e05540a1e78d47b3931ca14",
+        "w": 560
+      }
+    },
+    "scan-beb11620": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 83809,
+        "file": "site/assets/work/scan-beb11620-card.jpg",
+        "h": 1097,
+        "quality": 80,
+        "sha256": "57501bf61a9455dca9474c49388045610c1051ba4df073becac6cc9c5dda6b96",
+        "w": 686
+      },
+      "full": {
+        "boundedBy": 300000,
+        "bytes": 83809,
+        "file": "site/assets/work/scan-beb11620-card.jpg",
+        "h": 1097,
+        "quality": 80,
+        "sha256": "57501bf61a9455dca9474c49388045610c1051ba4df073becac6cc9c5dda6b96",
+        "w": 686
+      },
+      "palette": [
+        "#110e0e",
+        "#7d6e65",
+        "#4e423c",
+        "#322b29"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/sketch5.jfif",
+        "h": 1097,
+        "sha256": "944def9f21286395574efe45da37c863dfeddbf8a12b873ee12ef34170f5b19c",
+        "w": 686
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 77059,
+        "file": "site/assets/work/scan-beb11620-thumb.jpg",
+        "h": 896,
+        "quality": 74,
+        "sha256": "8704b7b27f58d97b24d2cf6bbab84dc0e1f3583d68330c0f391249d5fa06446a",
+        "w": 560
+      }
+    },
+    "sketch-1": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 206730,
+        "file": "site/assets/work/sketch-1-card.jpg",
+        "h": 900,
+        "quality": 80,
+        "sha256": "8cc1a236a25ec2439920ffae190043abb7a900a7faa91cc2dd81bec3e0ef1e60",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 346974,
+        "file": "site/assets/work/sketch-1-full.jpg",
+        "h": 1296,
+        "quality": 84,
+        "sha256": "96b5cc4cc277b776f0ad9e4a9724b81c01e66b527a53264c25c3855a2d7fd59d",
+        "w": 1296
+      },
+      "palette": [
+        "#c79652",
+        "#6d5b52",
+        "#cdbc91",
+        "#d1d5c5"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/sketch-1.jpg",
+        "h": 1296,
+        "sha256": "919bcc286c4d71bfcdd1c1ac94116af03540faaeb2b8de26efe2e3096834663e",
+        "w": 1296
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 75432,
+        "file": "site/assets/work/sketch-1-thumb.jpg",
+        "h": 560,
+        "quality": 74,
+        "sha256": "eb1115e99149de4abbb8b549fda47ea07eb0c980b65bd98485ef4c0e7e1131dd",
+        "w": 560
+      }
+    },
+    "sketch-2": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 192654,
+        "file": "site/assets/work/sketch-2-card.jpg",
+        "h": 1340,
+        "quality": 80,
+        "sha256": "d68674639eefd436ff029c96f9c16b19367413115bd45ee777ebf105373c4238",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 380847,
+        "file": "site/assets/work/sketch-2-full.jpg",
+        "h": 1820,
+        "quality": 84,
+        "sha256": "a1045b26d3c6daa447ee6992547fad089c37c9b4e1cc1951a84abf1940b77bd2",
+        "w": 1222
+      },
+      "palette": [
+        "#534127",
+        "#a38659",
+        "#6f5c3e",
+        "#846a42"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/sketch-2.jpg",
+        "h": 1820,
+        "sha256": "eb353b92d4ae8dcbfef0e0036080cf74b1d3f40333aceeca4ee5c0ce9d921fcb",
+        "w": 1222
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 77373,
+        "file": "site/assets/work/sketch-2-thumb.jpg",
+        "h": 834,
+        "quality": 74,
+        "sha256": "fe9b7b3c4782cdda1e839424ad204023efcd1d6766e49ab6d78e960ea3093afe",
+        "w": 560
+      }
+    },
+    "the-original-coworker": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 72745,
+        "file": "site/assets/work/the-original-coworker-card.jpg",
+        "h": 615,
+        "quality": 80,
+        "sha256": "a66fdf27e2f86d7e125b694091fac5415599dd349c91a574fe832d8f4517b3c0",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 86068,
+        "file": "site/assets/work/the-original-coworker-full.jpg",
+        "h": 700,
+        "quality": 84,
+        "sha256": "024df6375a3c95f1ea9f58be2965e7d81a0725b7be38c99386253283b3d41d14",
+        "w": 1024
+      },
+      "palette": [
+        "#372315",
+        "#9d9176",
+        "#876e50",
+        "#635c4b"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/the-original-coworker.jpg",
+        "h": 700,
+        "sha256": "8c8d2414f8523ff52060d26fd5cbc19671ba78f9d7281bbba078d23431b5d21f",
+        "w": 1024
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 29515,
+        "file": "site/assets/work/the-original-coworker-thumb.jpg",
+        "h": 383,
+        "quality": 74,
+        "sha256": "57b9ecf51c61557f29f60f9e7a802c0de46f19089bb2e89ee47004bf2569d15c",
+        "w": 560
+      }
+    },
+    "tide-down": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 149276,
+        "file": "site/assets/work/tide-down-card.jpg",
+        "h": 631,
+        "quality": 80,
+        "sha256": "55ef511c04baa9470d545f7f42e611911e3c7f654c505dda085d3656e52faed9",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 467442,
+        "file": "site/assets/work/tide-down-full.jpg",
+        "h": 1122,
+        "quality": 84,
+        "sha256": "18da5cefb2927141df2f5f9177c451429cbb39e0c7fbb8be16cdbdda9b1f9603",
+        "w": 1600
+      },
+      "palette": [
+        "#3b3333",
+        "#a8a6a4",
+        "#847a75",
+        "#cdcccb"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/tidedown.jpg",
+        "h": 1460,
+        "sha256": "bfd6fb6e448cc469e18d0c1e0d91ed944c5ea5b32656e0a35456830fc7d925dd",
+        "w": 2082
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 50733,
+        "file": "site/assets/work/tide-down-thumb.jpg",
+        "h": 393,
+        "quality": 74,
+        "sha256": "4a9fb4f175e2e0fc43ce35b17b7d815caeb67bde103f9319bd14d49a999aad8c",
+        "w": 560
+      }
+    },
+    "untitled-2": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 287835,
+        "file": "site/assets/work/untitled-2-card.jpg",
+        "h": 1250,
+        "quality": 80,
+        "sha256": "89160cd947bbcb6baac02100b870d55fe894bf608ae0b54799e66e4b2bc2c725",
+        "w": 797
+      },
+      "full": {
+        "boundedBy": 300000,
+        "bytes": 287835,
+        "file": "site/assets/work/untitled-2-card.jpg",
+        "h": 1250,
+        "quality": 80,
+        "sha256": "89160cd947bbcb6baac02100b870d55fe894bf608ae0b54799e66e4b2bc2c725",
+        "w": 797
+      },
+      "palette": [
+        "#764137",
+        "#e27054",
+        "#c34f3f",
+        "#b46d55"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/sadhu.jpg",
+        "h": 1250,
+        "sha256": "c4f9316e7695a6b7be1184e3a1bab68ab42fb49ae7408c5faf45e781c719437f",
+        "w": 797
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 103913,
+        "file": "site/assets/work/untitled-2-thumb.jpg",
+        "h": 878,
+        "quality": 62,
+        "sha256": "141ec0dcddcb3c5fe55839fe6b5f2ca6b699c03bab15bed4ef0607d3f31bce04",
+        "w": 560
+      }
+    },
+    "untitled-4": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 220317,
+        "file": "site/assets/work/untitled-4-card.jpg",
+        "h": 1250,
+        "quality": 80,
+        "sha256": "0b49ff4a79254090410791c07d9f9be502126ec5300275c31167bc8cbca5311c",
+        "w": 849
+      },
+      "full": {
+        "boundedBy": 300000,
+        "bytes": 220317,
+        "file": "site/assets/work/untitled-4-card.jpg",
+        "h": 1250,
+        "quality": 80,
+        "sha256": "0b49ff4a79254090410791c07d9f9be502126ec5300275c31167bc8cbca5311c",
+        "w": 849
+      },
+      "palette": [
+        "#b59a82",
+        "#34292f",
+        "#cfbba1",
+        "#88695b"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/jade.jpg",
+        "h": 1250,
+        "sha256": "d77ab914d69c1c686582cd9c248c447fcccdf30e7c2bf09b342612b6dec421dc",
+        "w": 849
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 93620,
+        "file": "site/assets/work/untitled-4-thumb.jpg",
+        "h": 824,
+        "quality": 74,
+        "sha256": "277ea168ca8323bdd9d97466e8131d9a5e1f24d5386bf5ec22104a175e5b8c04",
+        "w": 560
+      }
+    },
+    "untitled-6": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 62687,
+        "file": "site/assets/work/untitled-6-card.jpg",
+        "h": 582,
+        "quality": 80,
+        "sha256": "2f6801bad17df73c2ca3b4523e324a1045583096a07819c7e0742ffc03cd480b",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 74358,
+        "file": "site/assets/work/untitled-6-full.jpg",
+        "h": 662,
+        "quality": 84,
+        "sha256": "f161cffc32c82f0e9e6c877ecb76c2538697d522270c17ce8a21f3781486ce03",
+        "w": 1024
+      },
+      "palette": [
+        "#a79781",
+        "#5e4e40",
+        "#bfb8ab",
+        "#cfc4b3"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/untitled-6.jpg",
+        "h": 662,
+        "sha256": "5c39ef53a82a40dfc211113a83216ddd9cbcfebf9ee9d7b64a9df32aa868a47a",
+        "w": 1024
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 25936,
+        "file": "site/assets/work/untitled-6-thumb.jpg",
+        "h": 362,
+        "quality": 74,
+        "sha256": "d63562dc8ea63d9d9f6fa3fed531819f8553cd6a7f880da52711bad6fda66d3b",
+        "w": 560
+      }
+    },
+    "untitled-7": {
+      "card": {
+        "boundedBy": 300000,
+        "bytes": 86446,
+        "file": "site/assets/work/untitled-7-card.jpg",
+        "h": 507,
+        "quality": 80,
+        "sha256": "8cfc0774dd775f8ca23edf06207699caa5f205a20a2c3e56f9413cf9f3230704",
+        "w": 900
+      },
+      "full": {
+        "boundedBy": 800000,
+        "bytes": 246183,
+        "file": "site/assets/work/untitled-7-full.jpg",
+        "h": 900,
+        "quality": 84,
+        "sha256": "6b411edc712261d34b990952f4072a672803522c042bb226163072b38980625c",
+        "w": 1600
+      },
+      "palette": [
+        "#322415",
+        "#af9d86",
+        "#91775c",
+        "#615b49"
+      ],
+      "paletteDerivation": "sampled-from-image",
+      "source": {
+        "file": "content/originals/untitled-7.jfif",
+        "h": 941,
+        "sha256": "593455c0391e84525a63313bcf1fd35f26b79bfe82ac84dcd8d01c31480c191c",
+        "w": 1672
+      },
+      "thumb": {
+        "boundedBy": 110000,
+        "bytes": 34281,
+        "file": "site/assets/work/untitled-7-thumb.jpg",
+        "h": 315,
+        "quality": 74,
+        "sha256": "d8ad80c82647fbfc0cc3450bbbe26deff41ebd30a0167e6fb4ffb3f792a7db68",
+        "w": 560
+      }
+    }
+  },
+  "schema": "aoj.images/v1"
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "aoj.site/v1",
+  "$comment": "Where this build believes it is served from. No domain has been chosen, so canonicalOrigin is null and every absolute URL is a preview origin, marked as such in the HTML. Set canonicalOrigin to a real origin and the next build emits canonical links, absolute Open Graph URLs and a sitemap.",
+  "siteId": "artofjuan",
+  "name": "Art of Juan",
+  "canonicalOrigin": null,
+  "canonicalStatus": "UNASSIGNED",
+  "previewOrigin": "http://127.0.0.1:8080",
+  "previewPort": 8080,
+  "defaultLocale": "en",
+  "analytics": {
+    "enabled": false,
+    "note": "No analytics, no cookies, no third-party requests. The the brief permits privacy-respecting aggregate analytics as P1; none is implemented, so nothing is disclosed and nothing is collected."
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "schema": "aoj.qr/v1",
+  "$comment": "The permanent resolution layer. A QR prints a PUBLIC PATH (/q/...), never a website route. The path is mapped here to an entity; the website route is a second indirection the site is free to change. Re-pointing a public path at a DIFFERENT entity is the one change this layer forbids, and data/qr-identity-lock.json makes any such change fail the gate.",
+  "publicPathPrefix": "/q",
+  "destinationPolicy": {
+    "sameOrigin": true,
+    "allowedDestinationPrefixes": [
+      "/"
+    ],
+    "forbidden": [
+      "absolute http(s) destinations",
+      "protocol-relative //host",
+      "paths escaping the site root",
+      "percent-encoded separators (%2f, %5c)",
+      "backslashes"
+    ]
+  },
+  "identities": [
+    {
+      "qrId": "qr-artist-juan",
+      "ownerId": "juan-pabrua",
+      "entityType": "artist",
+      "entityId": "juan-pabrua",
+      "publicPath": "/q/juan",
+      "destination": "/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-casa-gorordo",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "casa-gorordo",
+      "publicPath": "/q/art/casa-gorordo",
+      "destination": "/work/casa-gorordo/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-ed",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "ed",
+      "publicPath": "/q/art/ed",
+      "destination": "/work/ed/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-tide-down",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "tide-down",
+      "publicPath": "/q/art/tide-down",
+      "destination": "/work/tide-down/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-few",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "few",
+      "publicPath": "/q/art/few",
+      "destination": "/work/few/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-untitled-2",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "untitled-2",
+      "publicPath": "/q/art/untitled-2",
+      "destination": "/work/untitled-2/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-untitled-4",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "untitled-4",
+      "publicPath": "/q/art/untitled-4",
+      "destination": "/work/untitled-4/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-scan-674525991",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "scan-674525991",
+      "publicPath": "/q/art/scan-674525991",
+      "destination": "/work/scan-674525991/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-scan-677838823",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "scan-677838823",
+      "publicPath": "/q/art/scan-677838823",
+      "destination": "/work/scan-677838823/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-scan-680595347",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "scan-680595347",
+      "publicPath": "/q/art/scan-680595347",
+      "destination": "/work/scan-680595347/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-scan-747168624",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "scan-747168624",
+      "publicPath": "/q/art/scan-747168624",
+      "destination": "/work/scan-747168624/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-scan-749143333",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "scan-749143333",
+      "publicPath": "/q/art/scan-749143333",
+      "destination": "/work/scan-749143333/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-scan-749355868",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "scan-749355868",
+      "publicPath": "/q/art/scan-749355868",
+      "destination": "/work/scan-749355868/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-scan-754498091",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "scan-754498091",
+      "publicPath": "/q/art/scan-754498091",
+      "destination": "/work/scan-754498091/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-scan-756345117",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "scan-756345117",
+      "publicPath": "/q/art/scan-756345117",
+      "destination": "/work/scan-756345117/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-scan-768310009",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "scan-768310009",
+      "publicPath": "/q/art/scan-768310009",
+      "destination": "/work/scan-768310009/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-scan-775416747",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "scan-775416747",
+      "publicPath": "/q/art/scan-775416747",
+      "destination": "/work/scan-775416747/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-scan-807859072",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "scan-807859072",
+      "publicPath": "/q/art/scan-807859072",
+      "destination": "/work/scan-807859072/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-scan-964ca031",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "scan-964ca031",
+      "publicPath": "/q/art/scan-964ca031",
+      "destination": "/work/scan-964ca031/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-scan-beb11620",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "scan-beb11620",
+      "publicPath": "/q/art/scan-beb11620",
+      "destination": "/work/scan-beb11620/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-pantalan",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "pantalan",
+      "publicPath": "/q/art/pantalan",
+      "destination": "/work/pantalan/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-daong",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "daong",
+      "publicPath": "/q/art/daong",
+      "destination": "/work/daong/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-mother-and-child",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "mother-and-child",
+      "publicPath": "/q/art/mother-and-child",
+      "destination": "/work/mother-and-child/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-the-original-coworker",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "the-original-coworker",
+      "publicPath": "/q/art/the-original-coworker",
+      "destination": "/work/the-original-coworker/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-colon-study",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "colon-study",
+      "publicPath": "/q/art/colon-study",
+      "destination": "/work/colon-study/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-old-work-2022",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "old-work-2022",
+      "publicPath": "/q/art/old-work-2022",
+      "destination": "/work/old-work-2022/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-untitled-6",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "untitled-6",
+      "publicPath": "/q/art/untitled-6",
+      "destination": "/work/untitled-6/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-untitled-7",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "untitled-7",
+      "publicPath": "/q/art/untitled-7",
+      "destination": "/work/untitled-7/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-sketch-1",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "sketch-1",
+      "publicPath": "/q/art/sketch-1",
+      "destination": "/work/sketch-1/",
+      "status": "active",
+      "revision": 1
+    },
+    {
+      "qrId": "qr-art-sketch-2",
+      "ownerId": "juan-pabrua",
+      "entityType": "artwork",
+      "entityId": "sketch-2",
+      "publicPath": "/q/art/sketch-2",
+      "destination": "/work/sketch-2/",
+      "status": "active",
+      "revision": 1
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "aoj.artist/v1",
+  "$comment": "Identity record for the artist. Every field is either a fact with a source, or null. A null is rendered as a deliberate absence and is never defaulted. Channels that are not published are listed under withheld so the omission travels with the record.",
+  "artistId": "juan-pabrua",
+  "displayName": "Juan Pabrua",
+  "brand": "ART OF JUAN",
+  "role": "Artist · Graphic designer",
+  "practice": "Watercolour",
+  "practiceSource": "The artist’s own description of his practice.",
+  "motto": "It moves me. It brings me joy. So I paint it.",
+  "mottoSource": "Supplied verbatim by the artist. Used as the narrative thread, not as a tagline.",
+  "statement": "Watercolour, made slowly. This is the archive — every work on record, each with a permanent address, and no claim the record cannot support.",
+  "story": [
+    "Juan Pabrua came to painting through drawing, and through graphic design — the discipline of deciding what a page says before deciding how it looks. Watercolour kept the drawing and loosened the hand.",
+    "The work is experimental by temperament: pigment is allowed to move, edges are allowed to fail, and the paper is allowed to have an opinion. What stays constant is the subject — everyday Filipino life, ordinary things looked at long enough to become worth the paper.",
+    "He paints what moves him. Gratitude is the method: attention first, then the brush."
+  ],
+  "storySource": "The artist’s own account, edited for prose only; no fact added.",
+  "biography": null,
+  "inPreparation": [
+    {
+      "what": "Artist profile for the Watercolor Society of Cebu",
+      "status": "being prepared",
+      "note": "Not a membership, an exhibition or a selection. Nothing on this site claims otherwise."
+    }
+  ],
+  "portrait": null,
+  "heritage": "Filipino",
+  "basedIn": null,
+  "links": [
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "handle": "@artofjuan",
+      "href": "https://www.instagram.com/artofjuan/",
+      "verified": true,
+      "source": "Instagram profile URL observed in the artist's own browser session, 2026-10-20"
+    }
+  ],
+  "contactMethods": [
+    {
+      "id": "instagram",
+      "kind": "social",
+      "label": "Instagram",
+      "value": "@artofjuan",
+      "href": "https://www.instagram.com/artofjuan/",
+      "status": "public",
+      "verified": true,
+      "note": "The only invented-free inquiry route available today: send a message there referencing the work."
+    },
+    {
+      "id": "vcard",
+      "kind": "download",
+      "label": "Save contact",
+      "value": "juan-pabrua.vcf",
+      "href": "/contact/juan-pabrua.vcf",
+      "status": "public",
+      "verified": true,
+      "note": "Static vCard 4.0 file, generated from this record. No phone number is present because none is approved for publication."
+    }
+  ],
+  "withheld": [
+    {
+      "id": "phone",
+      "reason": "The the brief's security boundary forbids a public phone number without explicit approval. Approval was not given."
+    },
+    {
+      "id": "facebook",
+      "reason": "No Facebook page URL is recorded anywhere in this tree. An invented URL is a broken link and a false claim."
+    },
+    {
+      "id": "messenger",
+      "reason": "No Messenger link is recorded. The inquiry route is Instagram until one is supplied."
+    },
+    {
+      "id": "email",
+      "reason": "No public email address has been approved for publication."
+    }
+  ]
+}

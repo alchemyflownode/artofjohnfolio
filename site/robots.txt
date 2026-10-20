@@ -1,0 +1,5 @@
+# Canonical origin: UNASSIGNED (this build is a preview)
+# No sitemap is published against a guessed host. Assign canonicalOrigin in data/site.json
+# and rebuild: robots.txt, canonical links and sitemap.xml all follow it.
+User-agent: *
+Allow: /

@@ -1,0 +1,40 @@
+{
+  "schema": "aoj.print/v1",
+  "$comment": "Declared print constants for the arithmetic gate. `assumedOrigin` is a RESERVATION, not the domain: no domain is assigned, so the check reserves 36 characters for it and fails if a real origin would push a module below the minimum. Update the origin and rerun before printing.",
+  "ecc": "M",
+  "minModuleMm": 0.4,
+  "recommendedModuleMm": 0.5,
+  "quietZoneModules": 4,
+  "assumedOriginChars": 36,
+  "assumedOrigin": "https://artofjuan.the studio.studio",
+  "labels": [
+    {
+      "id": "business-card",
+      "name": "Artist card",
+      "widthMm": 40,
+      "stock": "400 gsm uncoated, matte",
+      "note": "Handed to a collector; scanned at arm's length."
+    },
+    {
+      "id": "artwork-label",
+      "name": "Artwork label",
+      "widthMm": 30,
+      "stock": "300 gsm, matte, beside the work",
+      "note": "Scanned from 30–60 cm while standing."
+    },
+    {
+      "id": "certificate",
+      "name": "Certificate",
+      "widthMm": 25,
+      "stock": "A4, printed 1:1",
+      "note": "The tightest common case; kept in the gate on purpose."
+    }
+  ],
+  "notCovered": [
+    "physical contrast on the chosen stock",
+    "ink spread and laminate",
+    "curvature of a label on a stretched canvas",
+    "the scanner and its software",
+    "a human scanning a real print"
+  ]
+}

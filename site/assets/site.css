@@ -1,0 +1,514 @@
+/* =============================================================================
+   ART OF JUAN — site.css
+   Directed artist experience, v0.4. Watercolour × editorial × gallery.
+
+   WHAT THIS FILE REFUSES
+   · no glassmorphism and no backdrop blur — the paper is paper, not frosting
+   · no filter applied to a painting — the artwork is what it is
+   · no parallax, scroll-jacking, particles or simulated paint
+   · no monospace chrome: monospace is reserved for one thing, the permanent
+     record path at the foot of a work page
+   · no brand colour in resting navigation, and no menu before the first painting
+
+   WHAT IT GUARANTEES
+   · the page is complete and readable with JavaScript disabled (the only rules
+     that hide anything are scoped to `.js`, which a script adds before paint)
+   · every size resolves through --text-N, every weight through --w-*
+   · every hiding rule is either script-scoped or viewport-scoped, never both
+   ========================================================================== */
+
+:root {
+  /* paper + ink */
+  --paper: #f7f3ec;
+  --paper-2: #f0eade;
+  --paper-3: #e6dfd0;
+  --ink: #14120e;
+  --ink-2: #4a453b;
+  --ink-3: #6b6457;
+  --rule: #ddd3c1;
+  --rule-strong: #c3b8a3;
+
+  /* the one brand colour: ultramarine. Content marks and the focus ring only. */
+  --accent: #17365f;
+
+  /* closed type scale, rem on a 16px root */
+  --text-0: 0.75rem;    /* 12 */
+  --text-1: 0.8125rem;  /* 13 */
+  --text-2: 0.9375rem;  /* 15 */
+  --text-3: 1.0625rem;  /* 17 */
+  --text-4: 1.25rem;    /* 20 */
+  --text-5: 1.625rem;   /* 26 */
+  --text-6: 2.125rem;   /* 34 */
+  --text-7: 3rem;       /* 48 */
+  --text-8: 4.5rem;     /* 72 */
+  --text-9: 6.5rem;     /* 104 */
+
+  /* closed weight set */
+  --w-reg: 400;
+  --w-med: 500;
+  --w-semi: 600;
+
+  /* CLOSED motion set. Two budgets, deliberately different:
+     · interaction — everything a visitor does, all under 400ms
+     · entrance    — one cinematic reveal, used once, never on an interaction */
+  --dur-1: 120ms;
+  --dur-2: 180ms;
+  --dur-3: 350ms;
+  --dur-enter: 900ms;
+  --ease-1: cubic-bezier(0.2, 0, 0, 1);
+  --ease-cinema: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  --measure: 58ch;
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --frame: 1360px;
+
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Inter, system-ui, sans-serif;
+  --mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+
+  color-scheme: light;
+}
+
+/* ── reset ───────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--text-3);
+  font-weight: var(--w-reg);
+  line-height: 1.62;
+  font-synthesis-weight: none;
+  text-rendering: optimizeLegibility;
+}
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: var(--w-reg); line-height: 1.03; letter-spacing: -0.018em; text-wrap: balance; }
+p { margin: 0; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
+figure { margin: 0; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 0; }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ── primitives ──────────────────────────────────────────────────────────── */
+.frame { width: 100%; max-width: var(--frame); margin-inline: auto; padding-inline: var(--gutter); }
+
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 60;
+  background: var(--ink); color: var(--paper);
+  padding: 0.75rem 1rem; font-size: var(--text-2); text-decoration: none;
+}
+.skip:focus { left: 0.75rem; top: 0.75rem; }
+
+.eyebrow {
+  font-family: var(--sans);
+  font-size: var(--text-0);
+  font-weight: var(--w-med);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.prose { max-width: var(--measure); }
+.prose p + p { margin-top: 1.05em; }
+
+/* an absence the catalogue owns. Never a zero, never a guess. */
+.absent { font-family: var(--sans); color: var(--ink-3); }
+
+/* the ONE monospace surface on the public site. */
+.record {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.6ch;
+  margin-top: clamp(2rem, 5vw, 3rem);
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: var(--text-0);
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+.record a { color: var(--ink-2); text-decoration: none; border-bottom: 1px solid var(--rule-strong); }
+.record a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+
+/* ── 01 · encounter: the painting, before any menu ───────────────────────── */
+.opening { order: -1; }
+
+/* No artwork is ever cropped. A painting is shown whole, centred on paper, and
+   capped in height so it fits a screen without cutting the work. */
+/* A full-bleed stage with the painting CONTAINED: the screen is filled by the
+   work and its paper, never by a crop. `object-fit: contain` is the only
+   respectful way to be cinematic with a painting whose ratio you cannot change. */
+.opening__plate {
+  display: grid; place-items: center;
+  background: var(--paper-2);
+  height: min(92svh, 1000px);
+  overflow: hidden;
+}
+.opening__plate img {
+  width: 100%; height: 100%;
+  object-fit: contain;
+  transform-origin: center;
+}
+/* The one entrance in the system. Base state is VISIBLE, so a browser that never
+   runs the animation still sees the painting; `.js` only adds the reveal. */
+.js .opening__plate img {
+  animation: heroReveal var(--dur-enter) var(--ease-cinema) both;
+}
+@keyframes heroReveal {
+  from { opacity: 0.001; transform: scale(1.06); }
+  to   { opacity: 1;     transform: scale(1); }
+}
+.opening__caption {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+  margin-top: 0;
+  padding: 1.1rem var(--gutter) 1.15rem;
+  border-bottom: 1px solid var(--rule);
+}
+.opening__mark {
+  font-family: var(--serif);
+  font-size: var(--text-4);
+  font-weight: var(--w-reg);
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+.opening__title { font-family: var(--serif); font-size: var(--text-4); color: var(--ink-2); }
+.opening__scroll {
+  font-family: var(--sans);
+  font-size: var(--text-0);
+  font-weight: var(--w-med);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  text-decoration: none;
+  min-height: 44px; display: inline-flex; align-items: center;
+}
+.opening__scroll:hover { color: var(--ink); }
+
+/* ── masthead: in flow after the opening, sticky once scrolled past ──────── */
+.masthead {
+  position: sticky; top: 0; z-index: 30;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+}
+.masthead__inner {
+  display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
+  min-height: 4rem;
+}
+.brandmark {
+  display: inline-flex; align-items: baseline; gap: 0.7rem;
+  min-height: 44px; align-items: center;
+  text-decoration: none; color: var(--ink);
+}
+.brandmark__name { font-family: var(--serif); font-size: var(--text-4); }
+.brandmark__tag { font-size: var(--text-0); letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-3); }
+.nav { display: flex; align-items: center; gap: 0.25rem; }
+.nav a {
+  position: relative;
+  display: inline-flex; align-items: center; min-height: 44px;
+  padding: 0 0.8rem;
+  font-size: var(--text-2); font-weight: var(--w-med);
+  text-decoration: none; color: var(--ink-2);
+  transition: color var(--dur-2) var(--ease-1);
+}
+.nav a::after {
+  content: ""; position: absolute; left: 0.8rem; right: 0.8rem; bottom: 0.55rem;
+  height: 1px; background: currentColor;
+  transform: scaleX(0); transform-origin: left;
+  transition: transform var(--dur-2) var(--ease-1);
+}
+.nav a:hover, .nav a[aria-current="page"] { color: var(--ink); }
+.nav a:hover::after, .nav a[aria-current="page"]::after { transform: scaleX(1); }
+
+/* ── 02 · curiosity: the artist's voice, once, large ─────────────────────── */
+.voice { padding-block: clamp(4.5rem, 13vw, 10rem); }
+.voice__text {
+  font-family: var(--serif);
+  font-size: clamp(var(--text-6), 6.4vw, var(--text-8));
+  line-height: 1.06;
+  letter-spacing: -0.025em;
+  max-width: 20ch;
+  margin-block: 1.5rem 0;
+}
+.voice__text em { font-style: italic; color: var(--ink-2); }
+.voice__note { margin-top: clamp(1.75rem, 4vw, 2.5rem); max-width: 46ch; color: var(--ink-2); }
+
+/* ── 03 · connection: the story, with one painting beside it ─────────────── */
+.story { padding-block: clamp(3rem, 8vw, 6.5rem); border-top: 1px solid var(--rule); }
+.story__grid {
+  display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr);
+  gap: clamp(2rem, 6vw, 5.5rem);
+  align-items: start;
+}
+.story__title { font-size: clamp(var(--text-6), 4.6vw, var(--text-7)); margin-block: 0.85rem 1.4rem; }
+.story__role { font-size: var(--text-2); color: var(--ink-3); }
+.story__body { margin-top: 1.6rem; }
+.story__body p + p { margin-top: 1.05em; }
+.story__plate { position: relative; }
+.story__plate img { width: 100%; height: auto; }
+.story__plate figcaption {
+  margin-top: 0.7rem; padding-top: 0.55rem; border-top: 1px solid var(--rule);
+  font-size: var(--text-2); color: var(--ink-3);
+}
+.story__pull {
+  margin-top: clamp(2rem, 5vw, 3.25rem);
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--rule-strong);
+  font-family: var(--serif);
+  font-size: var(--text-5);
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+  max-width: 24ch;
+}
+
+/* ── 04 · discovery: paintings given wall space ──────────────────────────── */
+.gallery { padding-block: clamp(3rem, 8vw, 7rem); border-top: 1px solid var(--rule); }
+.gallery__head {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 1rem 3rem; align-items: baseline;
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+.gallery__title { font-size: clamp(var(--text-6), 4.6vw, var(--text-7)); }
+.gallery__note { max-width: 48ch; color: var(--ink-2); }
+
+.plates { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: clamp(2rem, 5vw, 4.5rem) clamp(1rem, 3vw, 2.5rem); }
+.plate { grid-column: span 12; margin: 0; }
+.plate a { display: block; text-decoration: none; }
+.plate__frame { position: relative; background: var(--paper-2); overflow: hidden; }
+.plate__frame img {
+  width: 100%; height: auto;
+  transition: transform var(--dur-3) var(--ease-cinema);
+}
+.plate a:hover .plate__frame img,
+.plate a:focus-visible .plate__frame img { transform: scale(1.035); }
+
+/* A hover affordance, never the only way to know what something is: the title is
+   always visible, and on touch there is no hover state to depend on. It exists
+   ONLY where hover exists, so nothing is hidden from a touch visitor. */
+@media (hover: hover) and (pointer: fine) {
+  .plate__view {
+    position: absolute; right: 0.9rem; bottom: 0.9rem;
+    display: inline-flex; align-items: center;
+    padding: 0.4rem 0.7rem;
+    background: var(--paper); color: var(--ink);
+    font-size: var(--text-0); font-weight: var(--w-med);
+    letter-spacing: 0.14em; text-transform: uppercase;
+    opacity: 0; transform: translateY(6px);
+    transition: opacity var(--dur-2) var(--ease-1), transform var(--dur-2) var(--ease-1);
+    pointer-events: none;
+  }
+  .plate a:hover .plate__view,
+  .plate a:focus-visible .plate__view { opacity: 1; transform: none; }
+}
+.plate figcaption {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.35rem 1.25rem;
+  margin-top: 0.85rem; padding-top: 0.6rem; border-top: 1px solid var(--rule);
+}
+.plate__title { font-family: var(--serif); font-size: var(--text-5); letter-spacing: -0.01em; }
+.plate__title--untitled { font-style: italic; color: var(--ink-2); }
+.plate__fact { font-size: var(--text-2); color: var(--ink-3); }
+.plate a:hover .plate__title,
+.plate a:focus-visible .plate__title { text-decoration: underline; text-underline-offset: 0.18em; }
+
+/* the opening plate of the discovery sequence runs the full column width */
+.plate--bleed { margin-inline: 0; }
+.plate--bleed .plate__frame { display: grid; place-items: center; background: var(--paper-2); }
+.plate--bleed .plate__frame img { width: auto; max-width: 100%; max-height: 78svh; }
+.plate--bleed figcaption { padding-inline: 0; }
+
+.plate--pair { grid-column: span 6; }
+.plate--pair:nth-of-type(even) { margin-top: clamp(0rem, 4vw, 4.5rem); }
+.plate--offset { grid-column: 3 / span 8; }
+.plate--offset img { height: auto; }
+
+.more { margin-top: clamp(2rem, 5vw, 3.25rem); }
+
+/* ── 05 · relationship: one quiet close ──────────────────────────────────── */
+.closing { padding-block: clamp(4rem, 11vw, 8.5rem); border-top: 1px solid var(--rule); }
+.closing__title { font-size: clamp(var(--text-6), 4.6vw, var(--text-7)); max-width: 18ch; }
+.closing__body { margin-top: 1.5rem; max-width: 46ch; color: var(--ink-2); }
+.closing__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.55ch;
+  min-height: 48px; padding: 0 1.5rem;
+  font-family: var(--sans); font-size: var(--text-2); font-weight: var(--w-med);
+  text-decoration: none; border: 1px solid var(--ink); border-radius: 0;
+  transition: background-color var(--dur-2) var(--ease-1), color var(--dur-2) var(--ease-1);
+}
+.btn--solid { background: var(--ink); color: var(--paper); }
+.btn--solid:hover { background: var(--ink-2); border-color: var(--ink-2); }
+.btn--ghost { background: transparent; color: var(--ink); }
+.btn--ghost:hover { background: var(--paper-2); }
+
+/* ── a work page: the wall label, not a product page ─────────────────────── */
+.work { padding-block: clamp(2rem, 5vw, 4rem) clamp(3rem, 7vw, 6rem); }
+.work__figure { max-width: 1100px; margin-inline: auto; }
+.work__figure img { width: 100%; height: auto; view-transition-name: artwork; }
+.work__text { max-width: 1100px; margin: clamp(1.75rem, 4vw, 3rem) auto 0; }
+.work__label { max-width: 44ch; }
+.work__title { font-size: clamp(var(--text-6), 4.4vw, var(--text-7)); margin-top: 0.55rem; }
+.work__title--untitled { font-style: italic; color: var(--ink-2); }
+.work__caption { margin-top: 0.9rem; font-size: var(--text-3); color: var(--ink-2); }
+.work__account { margin-top: clamp(1.5rem, 4vw, 2.25rem); max-width: var(--measure); }
+.work__account h2 { font-size: var(--text-2); font-family: var(--sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3); font-weight: var(--w-med); }
+.work__account p { margin-top: 0.6rem; }
+.work__enquire { margin-top: clamp(1.75rem, 4vw, 2.5rem); }
+.work__enquire a {
+  font-family: var(--serif); font-size: var(--text-5);
+  text-decoration-line: underline; text-decoration-thickness: 1px; text-underline-offset: 0.24em;
+}
+.work__enquire a:hover { color: var(--ink-2); }
+
+.pager {
+  display: flex; justify-content: space-between; gap: 1rem;
+  max-width: 1100px; margin: clamp(3rem, 7vw, 5rem) auto 0;
+  padding-top: 1.1rem; border-top: 1px solid var(--rule);
+}
+.pager a { display: inline-flex; flex-direction: column; justify-content: center; gap: 0.1rem; min-height: 44px; text-decoration: none; }
+.pager__dir { font-size: var(--text-0); letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-3); }
+.pager__title { font-family: var(--serif); font-size: var(--text-4); }
+.pager a:last-child { text-align: right; align-items: flex-end; }
+.pager a:hover .pager__title { text-decoration: underline; text-underline-offset: 0.2em; }
+
+/* ── index: a typed list, not a grid of cards ────────────────────────────── */
+.index-list { margin-top: clamp(3rem, 7vw, 5rem); border-top: 1px solid var(--rule); }
+.index-row {
+  display: grid; grid-template-columns: 4rem minmax(0, 1fr) auto;
+  gap: 1rem; align-items: baseline;
+  min-height: 52px; padding-block: 0.9rem;
+  border-bottom: 1px solid var(--rule);
+  text-decoration: none;
+}
+.index-row__no { font-size: var(--text-1); color: var(--ink-3); letter-spacing: 0.08em; }
+.index-row__title { font-family: var(--serif); font-size: var(--text-4); }
+.index-row__state { font-size: var(--text-1); color: var(--ink-3); }
+.index-row:hover .index-row__title { text-decoration: underline; text-underline-offset: 0.2em; }
+
+/* ── artist page ─────────────────────────────────────────────────────────── */
+.artist { padding-block: clamp(2.5rem, 6vw, 5rem); }
+.artist__head { max-width: 48ch; }
+.artist__title { font-size: clamp(var(--text-7), 6vw, var(--text-8)); margin-top: 0.75rem; }
+.artist__role { margin-top: 0.9rem; font-size: var(--text-3); color: var(--ink-3); }
+.artist__body { margin-top: clamp(2rem, 5vw, 3rem); max-width: var(--measure); }
+.artist__body p + p { margin-top: 1.1em; }
+.artist__quote {
+  margin-top: clamp(2.5rem, 6vw, 4rem); padding-top: 1.25rem;
+  border-top: 1px solid var(--rule-strong);
+  font-family: var(--serif); font-size: var(--text-6); line-height: 1.18;
+  letter-spacing: -0.015em; max-width: 24ch;
+}
+.artist__record { margin-top: clamp(2.5rem, 6vw, 4rem); max-width: var(--measure); }
+.artist__record h2 { font-size: var(--text-2); font-family: var(--sans); text-transform: uppercase; letter-spacing: 0.16em; color: var(--ink-3); font-weight: var(--w-med); }
+.artist__record p { margin-top: 0.7rem; color: var(--ink-2); }
+
+/* ── contact ─────────────────────────────────────────────────────────────── */
+.contact { padding-block: clamp(2.5rem, 6vw, 5rem); }
+.contact__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.contact__title { font-size: clamp(var(--text-6), 4.6vw, var(--text-7)); margin-top: 0.8rem; }
+.contact__body { margin-top: 1.4rem; max-width: 42ch; color: var(--ink-2); }
+.contact-list { margin-top: clamp(1.5rem, 4vw, 2.25rem); border-top: 1px solid var(--rule-strong); }
+.contact-list li { border-bottom: 1px solid var(--rule-strong); }
+.contact-list a, .contact-list .row {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+  min-height: 56px; padding-block: 0.8rem; text-decoration: none;
+}
+.contact-list a:hover .contact-value { text-decoration: underline; text-underline-offset: 0.2em; }
+.contact-label { font-size: var(--text-0); letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-3); }
+.contact-value { font-size: var(--text-3); }
+.contact__note { margin-top: 1.25rem; font-size: var(--text-2); color: var(--ink-3); max-width: 42ch; }
+
+/* ── colophon ────────────────────────────────────────────────────────────── */
+.colophon { order: 3; border-top: 1px solid var(--rule); padding-block: clamp(2rem, 5vw, 3rem); }
+.colophon__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem 2rem; }
+.colophon p { font-size: var(--text-2); color: var(--ink-2); }
+.colophon__mark { font-family: var(--serif); font-size: var(--text-4); color: var(--ink); }
+.colophon__fine { font-size: var(--text-1); color: var(--ink-3); }
+
+/* ── the printed identity still lands somewhere if a host cannot redirect ── */
+.arrival { min-height: 78svh; display: grid; place-items: center; padding: clamp(2rem, 6vw, 4rem); text-align: center; }
+.arrival__inner { max-width: 30ch; }
+.arrival h1 { font-size: clamp(var(--text-6), 5vw, var(--text-7)); margin-block: 0.6rem 1.4rem; }
+
+/* ── motion: enhancement only, never load-bearing ────────────────────────── */
+.js [data-reveal] {
+  opacity: 0; transform: translateY(14px);
+  transition: opacity var(--dur-3) var(--ease-cinema), transform var(--dur-3) var(--ease-cinema);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+.js [data-reveal].is-in { opacity: 1; transform: none; }
+
+/* three staggered steps per row, then the rest arrive together */
+.plates > .plate:nth-of-type(2) { --i: 1; }
+.plates > .plate:nth-of-type(3) { --i: 2; }
+.plates > .plate:nth-of-type(4) { --i: 1; }
+.plates > .plate:nth-of-type(5) { --i: 2; }
+.plates > .plate:nth-of-type(6) { --i: 3; }
+
+/* ── the cursor indicator: desktop, fine pointer, motion permitted ───────── */
+@media (pointer: fine) {
+  .cursor-view {
+    position: fixed; left: 0; top: 0; z-index: 40;
+    display: block;
+    padding: 0.45rem 0.75rem;
+    background: var(--ink); color: var(--paper);
+    font-size: var(--text-0); font-weight: var(--w-med);
+    letter-spacing: 0.14em; text-transform: uppercase;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity var(--dur-2) var(--ease-1);
+  }
+  .cursor-view.is-on { opacity: 1; }
+}
+
+/* ── page transition where the browser supports it ──────────────────────── */
+@view-transition { navigation: auto; }
+::view-transition-old(root) { animation: pageOut var(--dur-3) var(--ease-1) both; }
+::view-transition-new(root) { animation: pageIn var(--dur-3) var(--ease-1) both; }
+@keyframes pageOut { to { opacity: 0; } }
+@keyframes pageIn { from { opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal] { opacity: 1; transform: none; transition-delay: 0ms; }
+  .js .opening__plate img { animation: none; transform: none; opacity: 1; }
+  .cursor-view { display: none !important; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── responsive ──────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .story__grid, .contact__grid, .gallery__head { grid-template-columns: minmax(0, 1fr); }
+  .plate--pair, .plate--offset { grid-column: span 12; }
+  .plate--pair:nth-of-type(even) { margin-top: 0; }
+  .opening__plate img { height: min(70svh, 620px); }
+  .colophon__grid { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  .work__label { max-width: none; }
+}
+@media (max-width: 600px) {
+  .brandmark__tag { display: none; }
+  .masthead__inner { min-height: 3.5rem; }
+  .nav a { padding: 0 0.6rem; font-size: var(--text-2); }
+  .opening__caption { flex-wrap: wrap; gap: 0.4rem 1rem; }
+  .opening__plate img { height: min(62svh, 520px); }
+  .index-row { grid-template-columns: 2.75rem minmax(0, 1fr); }
+  .index-row__state { grid-column: 2; }
+  .plate--bleed { margin-inline: calc(50% - 50vw); }
+}
+
+/* ── print: a work page is also a gallery label ──────────────────────────── */
+@media print {
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .masthead, .pager, .colophon, .skip, .closing, .opening__scroll { display: none !important; }
+  .work__figure { max-width: 100%; }
+  .record { display: block; }
+}

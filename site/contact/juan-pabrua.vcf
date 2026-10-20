@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:4.0
+KIND:individual
+FN:Juan Pabrua
+N:Pabrua;Juan;;;
+ORG:ART OF JUAN
+TITLE:Artist · Graphic designer
+URL:http://127.0.0.1:8080/
+X-SOCIALPROFILE;TYPE=instagram:https://www.instagram.com/artofjuan/
+NOTE:Art of Juan — 29 works on record. Enquiries by Instagram.
+END:VCARD

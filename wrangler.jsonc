@@ -1,0 +1,19 @@
+// Cloudflare Workers static assets — the whole deployment surface of this site.
+//
+// There is no Worker script: every request is a static asset, and the printed
+// QR identities are resolved by site/_redirects, which tools/build.mjs generates
+// from data/qr-identities.json on every build. Nothing here is hand-maintained
+// except the name and the compatibility date.
+//
+//   npx wrangler deploy --dry-run      # validates without uploading
+//   npx wrangler deploy                # NOT AUTHORISED in this session
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "artofjuan",
+  "compatibility_date": "2026-10-20",
+  "assets": {
+    "directory": "./site",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  }
+}
